@@ -1,33 +1,30 @@
-# 🌱 Smart Shaded Plant House using Machine Learning
+# Smart Shaded Plant House using Machine Learning
 
 This project presents an IoT-based smart agriculture system designed for **tomato cultivation**. It integrates sensors, NodeMCU (ESP8266), and a **Random Forest Machine Learning model** to automate irrigation, lighting, and shading.
 
 The system monitors environmental conditions in real-time and makes intelligent decisions to maintain optimal plant growth.
 
----
 
-## 📁 Project Structure
+## Project Structure
 project.ino → Final Arduino code (ML communication)
 dataset.ino → Data collection from sensors
 data.py → Convert raw data into CSV format
 model.py → Machine Learning model + Arduino integration
 graph.py → Generate graphs for analysis
 
----
 
-## 🚀 Features
+##  Features
 
-- 🌡️ Temperature & Humidity Monitoring (DHT11)
-- 💧 Smart Irrigation System (ML-based Pump Control)
-- 💡 Automatic LED Control (Low Light Conditions)
-- 🌤️ Smart Shading using Servo Motor
-- 🤖 Machine Learning Predictions (Random Forest)
-- 📊 Data Visualization using Graphs
-- 🔄 Real-time Arduino ↔ Python Communication
+-  Temperature & Humidity Monitoring (DHT11)
+-  Smart Irrigation System (ML-based Pump Control)
+-  Automatic LED Control (Low Light Conditions)
+-  Smart Shading using Servo Motor
+-  Machine Learning Predictions (Random Forest)
+-  Data Visualization using Graphs
+-  Real-time Arduino ↔ Python Communication
 
----
 
-## 🧠 Machine Learning
+##  Machine Learning
 
 ### Models Used:
 - **Random Forest Classifier**
@@ -42,9 +39,8 @@ graph.py → Generate graphs for analysis
 - Soil Moisture  
 - Light Intensity  
 
----
 
-## 🛠️ Hardware Used
+## Hardware Used
 
 - NodeMCU (ESP8266)
 - DHT11 Sensor
@@ -53,21 +49,17 @@ graph.py → Generate graphs for analysis
 - Soil Moisture Sensor
 - UV / Light Sensor
 
----
 
-## 🔄 System Workflow
+##  System Workflow
 Sensors → Arduino → Python ML Model → Prediction → Actuators
 
----
-
-## ▶️ How to Run
+##  How to Run
 
 ### Step 1: Data Collection
 Upload the following code to NodeMCU:
 dataset.ino
 Collect sensor data.
 
----
 
 ### Step 2: Convert to CSV
 Run:
@@ -75,7 +67,6 @@ Run:
 python data.py
 ```
 
----
 
 ### Step 3: Run ML Model + Arduino Integration
 Run:
@@ -83,7 +74,6 @@ Run:
 python model.py
 ```
 
----
 
 ### Step 4: Run Final Arduino Control Code
 Run:
@@ -91,16 +81,13 @@ Run:
 project.ino
 ```
 
----
 ### Step 5: Generate Graphs
 Run:
 ```bash
 python graph.py
 ```
 
----
-
-## 📊 Results
+##  Results
 
 - Irrigation Accuracy: ~85%  
 - Temperature Prediction Error (MAE): ~0.04  
@@ -111,9 +98,7 @@ python graph.py
 - Servo Motor (Shading)  
 - Fan (Temperature Control)
 
----
-
-## 👩‍💻 Authors
+## Authors
 
 - Nancy Sakhiya  
 - Tanushree Jatia  
