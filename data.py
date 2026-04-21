@@ -9,9 +9,7 @@ pump = 0
 with open(input_file, "r") as file:
     lines = file.readlines()
 
-# =========================
 # EXTRACT DATA
-# =========================
 for i in range(len(lines)):
     line = lines[i].strip()
 
@@ -28,9 +26,7 @@ for i in range(len(lines)):
             temp, hum, moisture, light = parts
             data_rows.append([float(temp), float(hum), int(moisture), int(light), pump])
 
-# =========================
 # ADD NextTemp COLUMN
-# =========================
 final_rows = []
 
 for i in range(len(data_rows) - 1):
@@ -46,9 +42,7 @@ for i in range(len(data_rows) - 1):
         next_temp    # NextTemp
     ])
 
-# =========================
 # WRITE CSV
-# =========================
 with open(output_file, "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["Temp","Humidity","Moisture","Light","Pump","NextTemp"])
